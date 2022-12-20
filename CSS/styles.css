@@ -1,0 +1,31 @@
+h1 {
+    color: red;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu {
+    padding-right: 77px;
+    padding-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo {
+ 
+  padding-top: 44px;
+  padding-left: 55px;
+}
+
+.menuhebergements {
+    margin-right: 67px;
+    
+}
+
+header a:hover {
+    border-top: blue 2px solid;
+}
