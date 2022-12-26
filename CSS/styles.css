@@ -1,31 +1,40 @@
-h1 {
-    color: red;
+* {
+    max-width: 1400px;
+    box-sizing: border-box;
+    font-family: "Raleway";
+    margin: 0;
+    padding: 0;
 }
-nav {
+
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.menu {
-    padding-right: 77px;
-    padding-top: 48px;
+nav {
     display: flex;
-    justify-content: space-between;
-    
+    flex-direction: row;
+}
+.menu {
+    margin-right: 77px;
+    margin-top: 48px;
+    padding-left: 67px;    
 }
 
 .logo {
- 
   padding-top: 44px;
   padding-left: 55px;
 }
 
-.menuhebergements {
-    margin-right: 67px;
-    
-}
-
 header a:hover {
     border-top: blue 2px solid;
+}
+
+.bleue {
+    color: blue;
+}
+
+.grise {
+    color: grey
 }
