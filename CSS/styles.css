@@ -1,34 +1,126 @@
 * {
-    max-width: 1400px;
     box-sizing: border-box;
     font-family: "Raleway";
     margin: 0;
     padding: 0;
 }
 
+#logo_du_site {
+    width: 61.09px;
+    height: 19px;
+}
+
+body {
+    max-width: 1432px;
+    /*1400px + padding-left+ padding-right */
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 55px;
+    margin-right: 50px;
+
+}
+
 header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
+nav ul {
+    display: inline-flex;
+
+    list-style-type: none;
 }
+
 .menu {
-    margin-right: 77px;
-    margin-top: 48px;
-    padding-left: 67px;    
+
+
+    padding: 46px 17px 0 17px;
+
 }
 
-.logo {
-  padding-top: 44px;
-  padding-left: 55px;
+a {
+    text-decoration: none;
+    color: black;
+    padding: 46px 17px 0 17px;
 }
 
 header a:hover {
     border-top: blue 2px solid;
+    padding-top: 46px;
+    color: blue;
+}
+
+.logo {
+    padding-top: 44px;
+}
+
+
+
+main {
+    margin-top: 63px;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+main p {
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 950px 0px 0px;
+
+}
+
+form i {
+    padding: 16px 18px 15px 18px;
+    border-radius: 15px 0 0 15px;
+    background-color: #F2F2F2;
+}
+
+#rechercher {
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    border-left: none;
+    border-right: none;
+    padding: 14px 0 14px 17px;
+    font-weight: 700;
+}
+
+form ::placeholder {
+    color: black;
+}
+
+#bouton_rechercher {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    padding: 14px 16px 14px 16px;
+}
+
+#filtres {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+
+}
+#filtres h2 {
+    font-size: 18px;
+}
+#filtres h3 {
+    font-size: 17px;
+}
+.filtre {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 }
 
 .bleue {
