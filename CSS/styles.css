@@ -12,13 +12,10 @@
 }
 
 body {
-    max-width: 1432px;
-    /*1400px + padding-left+ padding-right */
-    padding-left: 16px;
-    padding-right: 16px;
+    min-width: 992px;
+    max-width: 1440px;
     margin-left: 55px;
-    margin-right: 50px;
-
+    
 }
 
 header {
@@ -30,13 +27,13 @@ header {
 
 nav ul {
     display: inline-flex;
-
+    margin-right:50px ;
     list-style-type: none;
 }
 
 .menu {
 
-
+    
     padding: 46px 17px 0 17px;
 
 }
@@ -68,6 +65,7 @@ main {
 
 h1 {
     font-size: 22px;
+    margin-bottom: 8px;
 }
 
 main p {
@@ -111,6 +109,7 @@ form ::placeholder {
     padding: 14px 16px;
     font-size: 18px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 #filtres {
@@ -138,7 +137,7 @@ form ::placeholder {
     border-radius: 25px;
     margin-left: 52px;
     min-width: fit-content;
-
+    cursor: pointer;
 }
 
 .filtre:hover {
@@ -193,7 +192,7 @@ form ::placeholder {
 }
 
 .hebergements_a_marseille_card img {
-    width: 246px;
+    width: 100%;
     height: 124px;
     border-radius: 20px 20px 0px 0px;
     border: #FFFFFF 5px solid;
@@ -202,10 +201,11 @@ form ::placeholder {
 
 .hebergements_a_marseille_container {
     display: grid;
+    grid-template-columns: 30% 30% 30%;
     gap: 30px;
-    grid-template-columns: auto auto auto;
     margin-top: 23px;
     margin-bottom: 40px;
+    max-width: 100%;
 }
 
 .afficher_plus {
@@ -243,8 +243,7 @@ form ::placeholder {
 .hebergements_a_marseille_card {
     background-color: #FFFFFF;
     border-radius: 20px;
-    width: 246px;
-    height: 199px;
+    min-width: max-content;
     box-shadow: 1px 1px 12px #D9D9D9;
 
 }
@@ -278,7 +277,8 @@ form ::placeholder {
 }
 
 .les_plus_populaires_card img {
-    width: 137px;
+    width: 100%;
+    max-width: 137px;
     height: 144px;
     border: #FFFFFF 5px solid;
     border-radius: 20px 0px 0px 20px;
@@ -320,13 +320,16 @@ form ::placeholder {
     font-size: 16px;
     font-weight: 700;
     width: 169px;
+    margin-bottom: 7px;
 }
 
 .info_les_plus_populaires p {
     font-size: 14px;
     font-weight: 400;
 }
-
+.les_plus_populaires_container {
+    min-width: max-content;
+}
 .les_plus_populaires_container article {
     margin-bottom: 33px;
 }
@@ -344,7 +347,6 @@ form ::placeholder {
 
 .activites_card {
     border-radius: 20px;
-    width: 302px;
     box-shadow: 1px 1px 12px #D9D9D9;
     margin-bottom: 61px;
 }
@@ -355,8 +357,9 @@ form ::placeholder {
 
 .activites_card_container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 43px;
+    grid-template-columns: 21.25% 21.25% 21.25% 21.25%;
+    gap: 5%;
+    margin-right: 55px;
 }
 
 .activites_card img {
@@ -379,6 +382,7 @@ footer {
     padding-bottom: 58px;
     padding-right: 327px;
     justify-content: space-between;
+    margin-right: 53px;
 }
 
 footer ul {
