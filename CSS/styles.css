@@ -271,6 +271,7 @@ form ::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 60%;
 }
 
 .les_plus_populaires_card {
@@ -285,7 +286,7 @@ form ::placeholder {
 
 .les_plus_populaires_card img {
     width: 100%;
-   
+    max-width: 40%;
     height: 144px;
     border: #FFFFFF 5px solid;
     border-radius: 20px 0px 0px 20px;
@@ -326,7 +327,6 @@ form ::placeholder {
 .info_les_plus_populaires h3 {
     font-size: 16px;
     font-weight: 700;
-    width: 169px;
     margin-bottom: 7px;
 }
 
@@ -437,6 +437,52 @@ footer li {
     #les_chambres {
         flex-direction: column;
     }
+    .les_plus_populaires_container {
+        display: flex;
+        min-width: 0;
+    }
+   
+    .les_plus_populaires_container article {
+        max-width: 32%;
+    }
+    .les_plus_populaires_card img {
+        height: 124px;
+        max-width: 35%;
+    }
+    .info_les_plus_populaires .texte_les_plus_populaires {
+        margin-top: 12px;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    .info_les_plus_populaires {
+        max-width: 50%;
+    }
+    #activites {
+        margin-left: 55px;
+    }
+    #activites h2 {
+        max-width: 150px;
+        margin-bottom: 0px;
+    }
+    .activites_card_container {
+        grid-template-columns: 100%;
+        gap: 0;
+        margin-right: 55px;
+    }
+    .activites_card img {
+        height: 144px;
+    }   
+    footer {
+        flex-direction: column;
+        margin: 0;
+      }
+}
+
+
+@media screen and (max-width: 768px) {
+    #les_chambres {
+        flex-direction: column;
+    }
     .les_plus_populaires_card a {
         flex-direction: column;
         
@@ -462,15 +508,5 @@ footer li {
     footer {
         flex-direction: column;
         margin: 0;
-      }
-}
-
-
-@media screen and (max-width: 768px) {
-    #les_chambres {
-      flex-direction: column;
-    }
-    footer {
-        flex-direction: column;
     }
 }
