@@ -15,7 +15,7 @@ body {
     min-width: 992px;
     max-width: 1400px;
     margin: 0 auto;
-     
+
 }
 
 header {
@@ -28,13 +28,13 @@ header {
 
 nav ul {
     display: inline-flex;
-    margin-right:50px ;
+    margin-right: 50px;
     list-style-type: none;
 }
 
 .menu {
 
-    
+
     padding: 46px 17px 0 17px;
 
 }
@@ -49,7 +49,7 @@ a {
 }
 
 header a:hover {
-    border-top: blue 3px solid;
+    border-top: blue 2px solid;
     padding-top: 44px;
     color: blue;
 }
@@ -117,10 +117,12 @@ form ::placeholder {
 
 #filtres {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     font-weight: 700;
-    padding: 0px 0px 50px 12px;
+    padding-bottom: 50px;
     margin-left: 55px;
+    margin-right: 30%;
 
 }
 
@@ -139,7 +141,7 @@ form ::placeholder {
     padding: 14px 20px 14px 20px;
     border: #D9D9D9 2px solid;
     border-radius: 25px;
-    margin-left: 52px;
+
     min-width: fit-content;
     cursor: pointer;
 }
@@ -228,7 +230,7 @@ form ::placeholder {
     padding: 42px 40px 46px 40px;
     border-radius: 20px;
     background-color: #F2F2F2;
-    width: 64%;
+
 }
 
 #hebergements_a_marseille h2 {
@@ -244,13 +246,13 @@ form ::placeholder {
 #hebergements_a_marseille p {
     font-size: 14px;
     font-weight: 400;
-    margin-bottom:7px;
+    margin-bottom: 7px;
 }
 
 .hebergements_a_marseille_card {
     background-color: #FFFFFF;
     border-radius: 20px;
-    min-width: max-content;
+
     box-shadow: 1px 1px 12px #D9D9D9;
 
 }
@@ -313,12 +315,15 @@ form ::placeholder {
     width: 12px;
     height: 12px;
 }
+
 .info_les_plus_populaires .etoiles {
-    margin:0px 0px 12px 15px;
+    margin: 0px 0px 12px 15px;
 }
+
 .info_les_plus_populaires .texte_les_plus_populaires {
     margin: 16px 22px 0px 15px;
 }
+
 .les_plus_populaires_icone h2 {
     font-size: 22px;
     font-weight: 700;
@@ -334,15 +339,15 @@ form ::placeholder {
     font-size: 14px;
     font-weight: 400;
 }
-.les_plus_populaires_container {
-    min-width: max-content;
-}
+
 .les_plus_populaires_container article {
     margin-bottom: 33px;
 }
+
 #activites {
     margin-left: 55px;
 }
+
 #activites h2 {
     font-size: 22px;
     font-weight: 700;
@@ -389,7 +394,9 @@ footer {
     background-color: #F2F2F2;
     display: flex;
     padding-bottom: 58px;
-    padding-right: 327px;
+    padding-left: 70px;
+    padding-top: 45px;
+    padding-right: 348px;
     justify-content: space-between;
     margin-right: 53px;
     margin-left: 55px;
@@ -400,7 +407,7 @@ footer ul {
     list-style-type: none;
     flex-direction: column;
     align-content: center;
-    margin-left: 70px;
+
 
 }
 
@@ -417,7 +424,7 @@ footer li {
 }
 
 .footer_info h2 {
-    margin: 45px 0 20px 70px;
+    margin-bottom: 20px;
 }
 
 .bleue {
@@ -433,78 +440,92 @@ footer li {
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     #les_chambres {
         flex-direction: column;
     }
+
+    #rechercher {
+        padding-right: 85px;
+        padding-left: 30px;
+    }
+
+    #filtres {
+        margin-right: 40px;
+    }
+
     .les_plus_populaires_container {
         display: flex;
         min-width: 0;
+        justify-content: space-between;
     }
-   
+
     .les_plus_populaires_container article {
         max-width: 32%;
     }
+
     .les_plus_populaires_card img {
-        height: 124px;
-        max-width: 35%;
+
+        max-width: 40%;
     }
+
     .info_les_plus_populaires .texte_les_plus_populaires {
         margin-top: 12px;
         margin-left: 10px;
         margin-right: 0;
     }
-    .info_les_plus_populaires {
-        max-width: 50%;
-    }
+
     #activites {
         margin-left: 55px;
     }
-    #activites h2 {
-        max-width: 150px;
-        margin-bottom: 0px;
-    }
-    .activites_card_container {
-        grid-template-columns: 100%;
-        gap: 0;
-        margin-right: 55px;
-    }
+
+    #activites h2 {}
+
+    .activites_card_container {}
+
     .activites_card img {
-        height: 144px;
-    }   
+        height: 211px;
+    }
+
     footer {
-        flex-direction: column;
-        margin: 0;
-      }
+        padding-right: 80px;
+    }
 }
 
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     #les_chambres {
         flex-direction: column;
     }
+
     .les_plus_populaires_card a {
         flex-direction: column;
-        
+
     }
+
     .les_plus_populaires_card img {
         height: 124px;
     }
+
     #activites {
         margin-left: 55px;
     }
+
     #activites h2 {
         max-width: 150px;
         margin-bottom: 0px;
     }
+
     .activites_card_container {
         grid-template-columns: 100%;
         gap: 0;
         margin-right: 55px;
     }
+
     .activites_card img {
         height: 190px;
-    }   
+    }
+
     footer {
         flex-direction: column;
         margin: 0;
