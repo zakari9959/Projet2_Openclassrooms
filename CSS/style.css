@@ -94,7 +94,7 @@ form i {
     border-bottom: #F2F2F2 1px solid;
     border-left: none;
     border-right: none;
-    padding: 14px 0 14px 17px;
+    padding: 14px 70px 14px 17px;
     font-weight: 700;
 
 }
@@ -142,7 +142,7 @@ form ::placeholder {
 .filtre {
     display: flex;
     align-items: center;
-    padding: 14px 20px 14px 20px;
+    padding: 14px 12px 14px 12px;
     border: #D9D9D9 2px solid;
     border-radius: 25px;
     margin-right: 30px;
@@ -157,6 +157,7 @@ form ::placeholder {
 #filtres i {
     color: #0065FC;
     width: 22px;
+    
 }
 
 .filtre_container {
@@ -450,7 +451,7 @@ footer li {
 @media screen and (min-width: 768px) and (max-width: 991px) {
     #les_chambres {
         flex-direction: column;
-        
+
     }
 
     #rechercher {
@@ -458,18 +459,25 @@ footer li {
         padding-left: 30px;
     }
 
-    #filtres h3{
+    #filtres {
+        max-width: 86%;
+    }
+    #filtres h3 {
         padding-left: 0;
     }
+
     .filtre {
         margin-right: 10px;
     }
+
     #hebergements_a_marseille {
         margin-right: 0;
     }
+
     #les_plus_populaires {
         margin-right: 0;
     }
+
     .les_plus_populaires_container {
         display: flex;
         min-width: 0;
@@ -501,9 +509,9 @@ footer li {
     }
 
     footer {
-        
+
         padding-left: 50px;
-        padding-right: 50px;   
+        padding-right: 50px;
     }
 }
 
@@ -514,23 +522,22 @@ footer li {
 
         margin: 0;
     }
+
     #logo_du_site {
         height: 25px;
         width: auto;
     }
-    #rechercher {
-        width: 100%;
-        
-        padding-left: 30px;
-    }
+
+    
+
     header a {
-        
-        
+
+
         width: 50%;
     }
-    
+
     header a:hover {
-        
+
         border-top: none;
     }
 
@@ -538,41 +545,52 @@ footer li {
         margin-right: 0;
         width: 100%;
         justify-content: space-evenly;
-        
+
     }
+
     nav li {
         border-bottom: #F2F2F2 3px solid;
     }
+
     nav li:hover {
         border-bottom: blue 3px solid;
-        
-        
+
+
         color: blue;
     }
+
     nav {
         width: 100%;
-        
+
     }
-    li.menu {
-       
-    }
+
+    li.menu {}
+
     .menu {
         padding: 46px 0 23px 0;
         min-width: 50%;
         text-align: center;
     }
+
     .menu a {
         padding-bottom: 23px;
-        
+
     }
+
     main {
         margin-top: 30px;
         margin-left: 20px;
     }
+
     form {
         margin-right: 20px;
         margin-left: 20px;
         max-width: 500px;
+    }
+    #rechercher {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 30px;
     }
     #logo_rechercher {
         display: block;
@@ -591,7 +609,7 @@ footer li {
     #filtres {
         flex-wrap: wrap;
         margin-left: 20px;
-        
+
     }
 
     .filtre_container {
@@ -605,18 +623,23 @@ footer li {
     .filtre {
         margin-right: 0;
         min-width: 47%;
+    
     }
+
     #filtres h2 {
         margin-bottom: 15px;
         margin-right: 100%;
     }
+
     #filtres h3 {
         font-size: 11px;
         padding-left: 5px;
     }
+
     #filtres i {
         font-size: 22px;
     }
+
     #info_nb_de_logement {
         margin-left: 20px;
     }
@@ -625,7 +648,7 @@ footer li {
         flex-direction: column-reverse;
         margin-left: 0;
         margin-right: 0;
-        
+
     }
 
     #hebergements_a_marseille {
@@ -634,21 +657,26 @@ footer li {
         margin-top: 0;
         background-color: white;
     }
-        .hebergements_a_marseille_container {
+
+    .hebergements_a_marseille_container {
         grid-template-columns: 100%;
         gap: 12px;
     }
+
     .afficher_plus {
         display: none;
     }
+
     #les_plus_populaires {
         margin-right: 0;
         border-radius: 0;
         padding: 28px 20px 47px 20px;
     }
+
     .les_plus_populaires_container article {
         margin-bottom: 11px;
     }
+
     .les_plus_populaires_card img {
         height: 144px;
         max-width: 40%;
@@ -669,6 +697,7 @@ footer li {
         gap: 0;
         margin-right: 20px;
     }
+
     .activites_card {
         margin-bottom: 24px;
     }
@@ -680,7 +709,7 @@ footer li {
     footer {
         flex-direction: column;
         margin: 0;
-        
+
     }
 }
 
