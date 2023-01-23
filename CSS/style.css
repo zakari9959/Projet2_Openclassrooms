@@ -5,18 +5,14 @@
     padding: 0;
 }
 
-#logo_du_site {
-    width: 61px;
-    height: 19px;
-    object-fit: cover;
-}
 
 body {
-
     max-width: 1400px;
     margin: 0 auto;
-
 }
+
+
+
 
 header {
     display: flex;
@@ -26,6 +22,16 @@ header {
     margin-left: 50px;
 }
 
+#logo_du_site {
+    width: 61px;
+    height: 19px;
+    object-fit: cover;
+}
+
+.logo {
+    padding-top: 44px;
+}
+
 nav ul {
     display: inline-flex;
     margin-right: 50px;
@@ -33,10 +39,7 @@ nav ul {
 }
 
 .menu {
-
-
     padding: 46px 17px 0 17px;
-
 }
 
 .menu a {
@@ -54,9 +57,6 @@ header a:hover {
     color: blue;
 }
 
-.logo {
-    padding-top: 44px;
-}
 
 
 
@@ -74,6 +74,9 @@ main p {
     font-size: 16px;
 }
 
+
+
+
 form {
     display: flex;
     justify-content: flex-start;
@@ -86,7 +89,6 @@ form i {
     padding: 16px 18px 15px 18px;
     border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
-
 }
 
 #rechercher {
@@ -96,7 +98,6 @@ form i {
     border-right: none;
     padding: 14px 70px 14px 17px;
     font-weight: 700;
-
 }
 
 form ::placeholder {
@@ -119,14 +120,15 @@ form ::placeholder {
     display: none;
 }
 
+
+
+
 #filtres {
     display: flex;
     align-items: center;
     font-weight: 700;
     padding-bottom: 50px;
     margin-left: 50px;
-
-
 }
 
 #filtres h2 {
@@ -146,7 +148,6 @@ form ::placeholder {
     border: #D9D9D9 2px solid;
     border-radius: 25px;
     margin-right: 30px;
-
     cursor: pointer;
 }
 
@@ -157,7 +158,6 @@ form ::placeholder {
 #filtres i {
     color: #0065FC;
     width: 22px;
-    
 }
 
 .filtre_container {
@@ -165,6 +165,9 @@ form ::placeholder {
     flex-direction: row;
     min-width: fit-content;
 }
+
+
+
 
 #info_nb_de_logement {
     display: flex;
@@ -187,6 +190,9 @@ form ::placeholder {
     font-size: 12px;
     color: #0065FC;
 }
+
+
+
 
 #les_chambres {
     display: flex;
@@ -256,18 +262,18 @@ form ::placeholder {
 .hebergements_a_marseille_card {
     background-color: #FFFFFF;
     border-radius: 20px;
-
     box-shadow: 1px 1px 12px #D9D9D9;
-
 }
 
 .hebergements_a_marseille_card:hover {
     box-shadow: 1px 4px 24px #D9D9D9;
 }
 
+
+
+
 #les_plus_populaires {
     margin-top: 30px;
-
     padding: 41px 2% 0px 2%;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -348,6 +354,9 @@ form ::placeholder {
     margin-bottom: 33px;
 }
 
+
+
+
 #activites {
     margin-left: 50px;
 }
@@ -394,6 +403,9 @@ form ::placeholder {
 
 }
 
+
+
+
 footer {
     background-color: #F2F2F2;
     display: flex;
@@ -411,8 +423,6 @@ footer ul {
     list-style-type: none;
     flex-direction: column;
     align-content: center;
-
-
 }
 
 footer h2 {
@@ -448,10 +458,11 @@ footer li {
 }
 
 
+
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
     #les_chambres {
         flex-direction: column;
-
     }
 
     #rechercher {
@@ -462,6 +473,7 @@ footer li {
     #filtres {
         max-width: 86%;
     }
+
     #filtres h3 {
         padding-left: 0;
     }
@@ -509,7 +521,6 @@ footer li {
     }
 
     footer {
-
         padding-left: 50px;
         padding-right: 50px;
     }
@@ -517,9 +528,9 @@ footer li {
 
 
 @media screen and (max-width: 767px) {
+
     header {
         flex-direction: column;
-
         margin: 0;
     }
 
@@ -528,16 +539,11 @@ footer li {
         width: auto;
     }
 
-    
-
     header a {
-
-
         width: 50%;
     }
 
     header a:hover {
-
         border-top: none;
     }
 
@@ -554,17 +560,12 @@ footer li {
 
     nav li:hover {
         border-bottom: blue 3px solid;
-
-
         color: blue;
     }
 
     nav {
         width: 100%;
-
     }
-
-    li.menu {}
 
     .menu {
         padding: 46px 0 23px 0;
@@ -587,11 +588,13 @@ footer li {
         margin-left: 20px;
         max-width: 500px;
     }
+
     #rechercher {
         width: 100%;
         padding-right: 0;
         padding-left: 30px;
     }
+
     #logo_rechercher {
         display: block;
         border-radius: 0 15px 15px 0;
@@ -609,7 +612,6 @@ footer li {
     #filtres {
         flex-wrap: wrap;
         margin-left: 20px;
-
     }
 
     .filtre_container {
@@ -623,7 +625,6 @@ footer li {
     .filtre {
         margin-right: 0;
         min-width: 47%;
-    
     }
 
     #filtres h2 {
@@ -648,7 +649,6 @@ footer li {
         flex-direction: column-reverse;
         margin-left: 0;
         margin-right: 0;
-
     }
 
     #hebergements_a_marseille {
@@ -709,7 +709,6 @@ footer li {
     footer {
         flex-direction: column;
         margin: 0;
-
     }
 }
 
