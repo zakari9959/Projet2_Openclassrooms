@@ -114,6 +114,7 @@ form ::placeholder {
     font-size: 18px;
     font-weight: 700;
     cursor: pointer;
+    display: block;
 }
 
 #logo_rechercher {
@@ -634,7 +635,7 @@ footer li {
 
     #filtres h3 {
         font-size: 11px;
-        padding-left: 5px;
+        padding-left: 10px;
     }
 
     #filtres i {
@@ -709,6 +710,9 @@ footer li {
     footer {
         flex-direction: column;
         margin: 0;
+    }
+    .footer_info {
+        margin-bottom: 20px;
     }
 }
 
